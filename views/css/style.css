@@ -1,0 +1,44 @@
+.container-fluid {
+    font-family: 'Roboto Condensed';
+}
+
+/*--------------NAVIGATION- LAYOUT VIEW--------------------------------*/
+
+.navbar {
+    background-color: white;
+}
+
+.nav-link {
+    color: #062F4F;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    background-color: #062F4F;
+    color: #fff;
+    
+}
+
+.fa {
+    color: #e74c30;
+    float: right;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.fa:hover {
+    background-color: #062F4F;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/*--------------WELCOME VIEW--------------------------------*/
+
+.pic_content {
+    text-align: center;
+    background-color: #062F4F;
+    font-size: 18px;
+    color: #fff;
+    padding: 20px;
+}
