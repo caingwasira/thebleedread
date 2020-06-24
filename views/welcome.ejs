@@ -11,7 +11,7 @@
         <div class="col-lg-4">
             <div class="row rounded-lg mr-1 pb-3">
                 <div class="home-content offset-lg-1 col-lg-10 text-muted overflow-hidden">
-                    <h2 class="pb-3 animated slideInLeft delay-1s">Hey Mensturators & Menstrual Enthusiasts</h2>
+                    <h3 class="pb-3 animated slideInLeft delay-1s"><b>Hey Mensturators & Menstrual Enthusiasts!</b></h3>
                     <p class="pb-3 animated slideInLeft delay-2s" style="color: #e74c30;">Welcome to The Bleed Read!</p>
                     <p class="pb-3 animated slideInLeft delay-3s" style="font-size: 1.0em;">
                         A dynamic and comprehensive website that covers all things related to menstruation.
@@ -50,7 +50,7 @@
 <section class="container-fluid mt-5 pt-5">
     <div class="row">
         <div class="blog-content col-lg-12 mx-auto">
-            <p class="pb-3 text-center text-danger">LATEST BLOGS</p>
+            <p class="pb-3 text-center text-danger"><b>LATEST BLOGS</b></p>
             <div id="demo" class="carousel slide w-75 mx-auto border border-danger rounded" data-ride="carousel">
                 <ul class="carousel-indicators" style="background-color: #e74c30;">
                   <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -61,12 +61,13 @@
                   <div class="carousel-item active">
                     <img src="images/THE BLEED READ UPLOADS-02.png" height="500vh">
                     <div class="carousel-caption bg-light rounded">
-                        <h5 class="text-muted"><b> <%= myposts[myposts.length - 1].title %> </b></h5>
+                        <h6 class="text-dark"><b> <%= myposts[myposts.length - 1].title %> </b></h6>
                         <hr class="mt-2 mb-2">
-                        <div class="blog-body text-muted">
+                        <div class="blog-body text-dark p-2">
                             <p><b>by <%= myposts[myposts.length - 1].author %> | 
                                   <%= myposts[myposts.length - 1].date %> | 
-                                  <%= myposts[myposts.length - 1].post_description %> | 4 Comments
+                                  <%= myposts[myposts.length - 1].post_description %> |
+                                  <p class="text-danger">4 <span>comments</span></p>
                                </b>
                             </p>
                             <p class="contents p-2">
@@ -79,12 +80,15 @@
                   <div class="carousel-item">
                     <img src="images/THE BLEED READ UPLOADS-04.png" height="500vh">
                     <div class="carousel-caption bg-light rounded">
-                        <h5 class="text-muted"><b><%= myposts[myposts.length - 2].title %></b></h5>
+                        <h6 class="text-dark"><b><%= myposts[myposts.length - 2].title %></b></h6>
                         <hr class="mt-2 mb-2">
-                        <div class="blog-body text-muted p-2">
+                        <div class="blog-body text-dark p-2">
                             <p><b>by <%= myposts[myposts.length - 2].author %> | 
                                   <%= myposts[myposts.length - 2].date %> | 
-                                  <%= myposts[myposts.length - 2].post_description %> | 10 Comments</b></p>
+                                  <%= myposts[myposts.length - 2].post_description %> |
+                                  <p class="text-danger">10 <span>comments</span></p>
+                                </b>
+                            </p>
                             <p class="contents">
                                 <%= myposts[myposts.length - 2].body %>
                             </p>
@@ -95,12 +99,15 @@
                   <div class="carousel-item">
                     <img src="images/white.png" height="500vh">
                     <div class="carousel-caption bg-light rounded">
-                        <h5 class="text-muted"><b><%= myposts[myposts.length - 3].title %></b></h5>
+                        <h6 class="text-dark"><b><%= myposts[myposts.length - 3].title %></b></h6>
                         <hr class="mt-2 mb-2">
-                        <div class="blog-body text-muted p-2">
+                        <div class="blog-body text-dark p-2">
                             <p><b>by <%= myposts[myposts.length - 3].author %> | 
                                   <%= myposts[myposts.length - 3].date %> | 
-                                  <%= myposts[myposts.length - 3].post_description %> | 1 Comments</b></p>
+                                  <%= myposts[myposts.length - 3].post_description %> |
+                                  <p class="text-danger">23 <span>comments</span></p>
+                                </b>
+                            </p>
                             <p class="contents">
                                 <%= myposts[myposts.length - 3].body %>
                             </p>
