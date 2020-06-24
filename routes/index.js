@@ -1,11 +1,12 @@
 const express = require('express');
-const links = require('../controllers/navcontoller');
+const posts = require('../models/navdata');
 const router = express.Router();
 
 // Get
 router.get('/', (req, res) => {
+    var myposts = posts.getPosts();
     res.render('welcome', {
-       link: links.sendLinks()
-    })
+        myposts
+    });
 })
 module.exports = router;

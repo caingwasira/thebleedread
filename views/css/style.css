@@ -1,23 +1,27 @@
-.container-fluid {
-    font-family: 'Roboto Condensed';
+* {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.02em;
 }
 
 /*--------------NAVIGATION- LAYOUT VIEW--------------------------------*/
 
-.topnav {
+.mynav {
     background-color: #fff;
 }
 
-.nav-link {
+.mynav li a {
     color: #062F4F;
-    font-weight: bold;
     font-size: 2vmin;
+    font-weight: bold;
 }
 
-.nav-link:hover {
-    background-color: #062F4F;
-    color: #fff;
-    
+.mynav li a:hover {
+    color: #e74c30;
+}
+
+.fa-bars {
+    color: #e74c30;
+    float: right;
 }
 
 .fa {
@@ -33,47 +37,129 @@
     border-radius: 10px;
 }
 
-.topnav .icon {
-    display: none;
+
+.btn-danger {
+    background-color: #e74c30 !important;
 }
 
-@media screen and (max-width: 1000px) {
-    .topnav ul li a {
-        display: none;
-    }
-
-    .topnav .icon {
-        float: right;
-        display: block;
-        margin-left: 3em;
-        color: #e74c30;
-        font-weight: bold;
-    }
+.contact-btn, .learnmore-btn {
+    color: #e74c30 !important;
+    background-color: #fff !important;
+    border: .02em solid #e74c30;
 }
 
+.contact-btn:hover, .learnmore-btn:hover  {
+    color: #fff !important;
+    background-color: #e74c30 !important;
+}
 
-@media screen and (max-width: 1000px) {
-    .topnav.responsive { position: relative;}
-    .topnav.responsive .icon {
-        display: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive ul li a {
+.contactus-btn {
+    background-color: #e74c30 !important;
+    color: #fff !important;
+}
+
+@media(max-width: 1000px) {
+    .navbar .nav-item, .social-links {
         display: block;
+        width: auto;
+        padding: 0 5em 0 0;
         text-align: center;
-        z-index: 999;
-        overflow: hidden;
+    }
+
+    .social-links {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+
+    .social-items {
+        padding-left: 4em;
+    }
+
+
+    .home {
+        padding-top: auto !important;
+    }
+
+    .home-row {
+        margin-top: auto !important;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.8em;
+    }
+
+    .navbar-brand img {
+        width: 2rem !important;
     }
 }
-/*--------------WELCOME VIEW--------------------------------*/
 
-.pic_content {
-    font-family: 'Playfair Display';
-    text-align: center;
-    background-color: #800080;
-    font-style: italic;
-    font-size: medium;
-    color: #fff;
-    padding: 15px;
+
+/*--------------HOME-----------------------------------------------*/
+
+.why-thebleedread {
+    background-color: #ffb5a6;
+}
+
+@media screen and (max-width: 1000px) {
+    .home-content {
+        text-align: center;
+    }
+
+    .wt-content {
+        text-align: center;
+    }
+
+    .col-lg-3 {
+        margin-left: 3em;
+    }
+
+    #email, #subscribe {
+        width: 60%;
+    }
+
+}
+
+
+
+/*--------------BLOG- POSTS-----------------------------------------------*/
+
+.carousel-inner img {
+    width: 100%;
+}
+
+.thebleedread {
+    background-color: #fff;
+}
+
+.blog-content {
+    font-size: .8em;
+}
+
+@media screen and (max-width: 800px) {
+    .blog-content {
+        font-size: .7em;
+    }
+}
+
+
+/*--------------FOOTER-----------------------------------------------*/
+
+.flinks {
+    color: #062F4F;
+    font-size: 1.0em;
+    width: 5em;
+}
+
+.flinks:hover {
+    text-decoration: none;
+    color: #e74c30;
+}
+
+#subscribe:hover {
+    background-color: #e74c30 !important;
+}
+
+.techsuite {
+    font-size: .7em;
 }

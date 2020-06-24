@@ -1,14 +1,219 @@
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-8 h-auto p-0 border-top border-danger">
-            <img class="img h-50 w-100" src="images/THE BLEED READ UPLOADS-03.png" alt="home">
-            <p class="pic_content">Supporting Mensturators Everywhere</p>
+<section class="home container-fluid mb-5 pb-5 pt-4">
+    <div class="home-row row mt-3">
+        <div class="home-row col-lg-8 pl-3">
+            <img class="animated zoomIn img w-100" src="images/THE BLEED READ UPLOADS-03.png" height="400px">
+            <p class="pic_content text-white p-3 text-center animated zoomIn delay-1s"
+               style="font-family: 'Work Sans';background-color: #ffb5a6;font-size: large;">
+               Supporting Mensturators Everywhere
+            </p>
         </div>
-        <div class="col md-4 h-auto border-top border-danger">
-            <div class="container mx-auto">
-                <p class="mx-auto">Recent Posts</p>
+        <div class="col-lg-4">
+            <div class="row rounded-lg mr-1 pb-3">
+                <div class="home-content offset-lg-1 col-lg-10 text-muted overflow-hidden">
+                    <h2 class="pb-3 animated slideInLeft delay-1s">Hey Mensturators & Menstrual Enthusiasts</h2>
+                    <p class="pb-3 animated slideInLeft delay-2s" style="color: #e74c30;">Welcome to The Bleed Read!</p>
+                    <p class="pb-3 animated slideInLeft delay-3s" style="font-size: 1.0em;">
+                        A dynamic and comprehensive website that covers all things related to menstruation.
+                        This is also an educational and problem solving platform where you can ask questions and share
+                        your thoughts through the comment section below.
+                    </p>
+                    <a class="btn btn-sm learnmore-btn animated zoomIn delay-4s p-2" href="/blog">Learn More</a>
+                    <a class="btn btn-sm contactus-btn animated zoomIn delay-4s p-2" href="/contact">Contact Us</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
+<section class="container-fluid mt-5 mb-5">
+    <div class="row d-flex why-thebleedread justify-content-center pt-5">
+        <div class="col-lg-6 pl-5 pt-5">
+            <img class="img-fluid w-100 h-75 rounded-circle" src="images/THE BLEED READ UPLOADS-04.png">
+        </div>
+        <div class="col-lg-5 pt-5 pb-5">
+            <div class="wt-content pt-5 text-light">
+                <p class="pb-1 text-danger">WHY THE BLEED READ</p>
+                <h1><b>Menstrual <br>Health Matters</b></h1>
+                <p class="pb-4">Over half the world’s populate will have a menstrual experience during their lifetime. 
+                    Yet most, will experience their first period with limited knowledge about menstruation, 
+                    others will experience their periods without adequate menstrual products, 
+                    and others will experience menstrual complications appropriate support or intervention. 
+                </p>
+                <p class="pb-1">This platform was created because it is needed!</p>
+                <a class="text-danger bg-white p-2 rounded-lg" href="/about">
+                    About The Author<i class="fas fa-long-arrow-alt-right pl-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid mt-5 pt-5">
+    <div class="row">
+        <div class="blog-content col-lg-12 mx-auto">
+            <p class="pb-3 text-center text-danger">LATEST BLOGS</p>
+            <div id="demo" class="carousel slide w-75 mx-auto border border-danger rounded" data-ride="carousel">
+                <ul class="carousel-indicators" style="background-color: #e74c30;">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/THE BLEED READ UPLOADS-02.png" height="500vh">
+                    <div class="carousel-caption bg-light rounded">
+                        <h5 class="text-muted"><b> <%= myposts[myposts.length - 1].title %> </b></h5>
+                        <hr class="mt-2 mb-2">
+                        <div class="blog-body text-muted">
+                            <p><b>by <%= myposts[myposts.length - 1].author %> | 
+                                  <%= myposts[myposts.length - 1].date %> | 
+                                  <%= myposts[myposts.length - 1].post_description %> | 4 Comments
+                               </b>
+                            </p>
+                            <p class="contents p-2">
+                                <%= myposts[myposts.length - 1].body %>
+                            </p>
+                            <a href="/blog" class="btn btn-sm btn-outline-danger mb-3">Read More</a>
+                        </div>
+                    </div>   
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/THE BLEED READ UPLOADS-04.png" height="500vh">
+                    <div class="carousel-caption bg-light rounded">
+                        <h5 class="text-muted"><b><%= myposts[myposts.length - 2].title %></b></h5>
+                        <hr class="mt-2 mb-2">
+                        <div class="blog-body text-muted p-2">
+                            <p><b>by <%= myposts[myposts.length - 2].author %> | 
+                                  <%= myposts[myposts.length - 2].date %> | 
+                                  <%= myposts[myposts.length - 2].post_description %> | 10 Comments</b></p>
+                            <p class="contents">
+                                <%= myposts[myposts.length - 2].body %>
+                            </p>
+                            <a href="/blog" class="btn btn-sm btn-outline-danger mb-3">Read More</a>
+                        </div>
+                    </div> 
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/white.png" height="500vh">
+                    <div class="carousel-caption bg-light rounded">
+                        <h5 class="text-muted"><b><%= myposts[myposts.length - 3].title %></b></h5>
+                        <hr class="mt-2 mb-2">
+                        <div class="blog-body text-muted p-2">
+                            <p><b>by <%= myposts[myposts.length - 3].author %> | 
+                                  <%= myposts[myposts.length - 3].date %> | 
+                                  <%= myposts[myposts.length - 3].post_description %> | 1 Comments</b></p>
+                            <p class="contents">
+                                <%= myposts[myposts.length - 3].body %>
+                            </p>
+                            <a href="/blog" class="btn btn-sm btn-outline-danger mb-3">Read More</a>
+                        </div>
+                    </div>    
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+              
+        </div>
+    </div>
+</section>
+<section class="container-fluid mt-5 pb-5">
+    <div class="col-lg-10 mx-auto justify-content-center mt-5 mb-5">
+        <h3 class="pt-5 text-muted text-center">Introduction Video</h3>
+        <p class="pb-2 text-muted text-center">| click to play |</p>
+        <!-- Grid row -->
+        <div class="row">
+            <!-- Grid column Start -->
+            <div class="col-lg-6 col-md-6">
+                <!--Modal: Name-->
+                <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                     <!--Content-->
+                        <div class="modal-content">
+                            <!--Body-->
+                            <div class="modal-body mb-0 p-0">
+                                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half rounded-lg">
+                                    <iframe class="embed-responsive-item" src="videos/intro.mp4"
+                                    allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer justify-content-center">
+                                <span class="mr-4 text-danger">Get in touch!</span>
+                                <a cl href="https://www.instagram.com/cg_femo"><i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.instagram.com/cg_femo"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.instagram.com/hushpappi"><i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                </a>        
+                                <button type="button" class="btn btn-outline-danger btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Modal: Name-->
+                <a><img class="img-fluid z-depth-1 h-75 w-100 rounded" src="images/mandi2.PNG" alt="video"
+                data-toggle="modal" data-target="#modal4"></a>
+            </div>
+            <!-- Grid column End -->
+            <!-- Grid column Start -->
+            <div class="col-lg-6 col-md-6">
+                <!--Modal: Name-->
+                <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                     <!--Content-->
+                        <div class="modal-content">
+                            <!--Body-->
+                            <div class="modal-body mb-0 p-0">
+                                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                    <iframe class="embed-responsive-item" src="videos/intro.mp4"
+                                    allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer justify-content-center">
+                                <span class="mr-4 text-danger">Get in touch!</span>
+                                <a cl href="https://www.instagram.com/cg_femo"><i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.instagram.com/cg_femo"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.instagram.com/hushpappi"><i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                </a>        
+                                <button type="button" class="btn btn-outline-danger btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Modal: Name-->
+                <a><img class="img-fluid z-depth-1 h-75 w-100 rounded" src="images/mandi.PNG" alt="video"
+                data-toggle="modal" data-target="#modal4"></a>
+            </div>
+            <!-- Grid column End -->
+        </div>
+        <!-- Grid row -->
+    </div>
+</section>
+<section class="container mt-5 mb-5 d-flex justify-content-center">
+    <div class="row mb-5">
+        <div class="col-md-4 mb-5">
+          <div class="thumbnail">
+            <img class="rounded-circle" src="images/logo.png" alt="thebleedread" width="250vw" height="250vh" style="background-color: white;">
+          </div>
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready( function() {
+        let maxLength = 250;
+        $('.blog-body').children('p').each( function() {
+            let message = $(this).text();
+            if(message.length > maxLength) {
+                message = message.substr(0, maxLength) + '...';
+            }
+            $(this).text(message);
+        })
+    });
+</script>

@@ -1,7 +1,9 @@
-const links = require('../models/navdata');
+const posts = require('../models/navdata');
 
 
-exports.sendLinks = () => {
-    const navlinks = links.getLinks();
-    return navlinks;
+exports.sendPosts = () => {
+    const myposts = posts.getPosts();
+    myposts.forEach( post => {
+        return post;
+    })
 }
