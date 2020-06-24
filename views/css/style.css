@@ -61,7 +61,6 @@
 @media(max-width: 1000px) {
     .navbar .nav-item, .social-links {
         display: block;
-        border-bottom: 1px solid #eeeeee;
         width: auto;
         padding: 0 5em 0 0;
         text-align: center;
