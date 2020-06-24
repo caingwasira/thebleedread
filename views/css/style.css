@@ -61,6 +61,7 @@
 @media(max-width: 1000px) {
     .navbar .nav-item, .social-links {
         display: block;
+        border-bottom: 1px solid #eeeeee;
         width: auto;
         padding: 0 5em 0 0;
         text-align: center;
@@ -76,6 +77,10 @@
         padding-left: 4em;
     }
 
+    .welcome_content {
+        margin-top: 5rem;
+    }
+
 
     .home {
         padding-top: auto !important;
@@ -83,6 +88,10 @@
 
     .home-row {
         margin-top: auto !important;
+    }
+
+    .navbar-nav {
+        border-top: 1px solid #e74c30;
     }
 
     .navbar-nav .nav-link {
