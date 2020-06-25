@@ -142,6 +142,15 @@
 
 .blog-content {
     font-size: .8em;
+    color: #333;
+}
+
+.carousel-caption {
+    opacity: .9;
+}
+
+.contents {
+    color: black;
 }
 
 @media screen and (max-width: 800px) {
@@ -169,7 +178,7 @@
 /*--------------VIDEOS-----------------------------------------------*/
 
 .videos {
-    background-color: #eeeeee;
+    background-color: #fafafa;
 }
 
 /*--------------FOOTER-----------------------------------------------*/
