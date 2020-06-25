@@ -150,18 +150,18 @@
     }
 
     .carousel-caption h6 {
-        font-size: .7em;
+        font-size: .8em;
     }
 }
 
 
 @media screen and (max-width: 500px) {
     .carousel-caption {
-        padding-top: 5em;
+        margin-top: 5em;
     }
 
     .img-fluid {
-        margin-bottom: 15rem;
+        margin-bottom: 4rem;
     }
 }
 
