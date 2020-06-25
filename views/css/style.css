@@ -148,11 +148,15 @@
     .blog-content {
         font-size: .7em;
     }
+
+    .carousel-caption h6 {
+        font-size: .7em;
+    }
 }
 
 
 @media screen and (max-width: 500px) {
-    .carousel-item {
+    .carousel-caption {
         padding-top: 5em;
     }
 
