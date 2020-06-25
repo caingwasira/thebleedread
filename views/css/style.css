@@ -151,6 +151,17 @@
 }
 
 
+@media screen and (max-width: 500px) {
+    .carousel-item {
+        padding-top: 5em;
+    }
+
+    .img-fluid {
+        margin-bottom: 15rem;
+    }
+}
+
+
 /*--------------VIDEOS-----------------------------------------------*/
 
 .videos {
